@@ -1,0 +1,152 @@
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-label input {
+  margin-right: 10px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dropdown-header.open {
+  background-color: #3652f5;
+  color: white;
+}
+
+.arrow {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow.down {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow.up {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 67%;
+  background-color: #bedffa;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  max-height: 92%;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* .dropdown-content.upwards {
+  bottom: 100%;
+  top: auto;
+  border-radius: 4px 4px 0 0;
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+} */
+
+.dropdown-search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-label input {
+  margin-right: 15px;
+}
+
+.select-all {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #eee;
+}
+.option {
+  display: flex;
+  padding: 5px;
+  font-size: 16px;
+}
+/* Estilo básico de la scrollbar */
+.seleccionados::-webkit-scrollbar {
+  width: 5px; /* Ancho de la scrollbar vertical */
+  height: 12px; /* Altura de la scrollbar horizontal */
+}
+
+/* Fondo de la scrollbar */
+.seleccionados::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Thumb (la parte desplazable) de la scrollbar */
+.seleccionados::-webkit-scrollbar-thumb {
+  background: #318bdf;
+  border-radius: 10px;
+}
+
+/* Thumb cuando el mouse pasa por encima */
+.seleccionados::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Thumb cuando está activo */
+.seleccionados::-webkit-scrollbar-thumb:active {
+  background: #318bdf;
+}
+.seleccionados {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
+  height: 105px;
+  max-height: 105px;
+  overflow: auto;
+}
+.fSelect {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  height: 20px;
+  padding: 2px 8px;
+  font-size: 12px;
+  background-color: #6bb8f7;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: white;
+}
+@media screen and (max-width: 1700px) {
+  .seleccionados {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    height: 65px;
+    max-height: 85px;
+    overflow: auto;
+  }
+}

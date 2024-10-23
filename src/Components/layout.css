@@ -1,0 +1,320 @@
+.profesionales-container {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.header {
+  background-color: #3553fd;
+  height: 80px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.arreglo {
+  display: flex;
+  gap: 50px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.header-info p {
+  margin: 5px 0;
+}
+
+.table-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.profesionales-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.profesionales-table th,
+.profesionales-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+td {
+  font-size: 13px;
+}
+th {
+  font-size: 13px;
+}
+.profesionales-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.profesionales-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.profesionales-table th:nth-child(1),
+.profesionales-table td:nth-child(1) {
+  width: 40px;
+}
+
+.profesionales-table th:nth-child(2),
+.profesionales-table td:nth-child(2) {
+  width: 200px;
+}
+
+.profesionales-table th:nth-child(3),
+.profesionales-table td:nth-child(3) {
+  width: 180px;
+}
+
+.profesionales-table th:nth-child(4),
+.profesionales-table td:nth-child(4) {
+  width: 130px;
+}
+
+.profesionales-table th:nth-child(5),
+.profesionales-table td:nth-child(5) {
+  width: 120px;
+}
+
+.profesionales-table th:nth-child(6),
+.profesionales-table td:nth-child(6) {
+  width: 120px;
+}
+
+.profesionales-table th:nth-child(7),
+.profesionales-table td:nth-child(7) {
+  width: 180px;
+}
+
+.profesionales-table th:nth-child(8),
+.profesionales-table td:nth-child(8) {
+  width: 100px;
+}
+.profesionales-table th:nth-child(9),
+.profesionales-table td:nth-child(9) {
+  width: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  height: 100px;
+  padding: 0 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.pagination select {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.pagination button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.filtros-btn {
+  background-color: #3854f3;
+  color: white;
+}
+.filtros-btn:hover {
+  background-color: #1535eb;
+}
+
+.limpiar-btn {
+  background-color: white;
+  color: red;
+  border: 1px solid red !important;
+}
+.limpiar-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.cerrar-btn {
+  background-color: white;
+  color: red;
+  border: 1px solid red !important;
+}
+.cerrar-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.elegir-fechas-btn {
+  background-color: #cacaca;
+  color: #1d1d1d;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3f51b5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.primerContenedorFooter button {
+  padding: 10px 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+.cerrar-btn {
+  padding: 10px 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.elegir-fechas-btn {
+  padding: 10px 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+
+.elegir-fechas-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-active {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.btn-active:hover {
+  background-color: #0056b3;
+}
+.btn-confirmar {
+  padding: 10px 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.btn-confirmar:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.buscadores {
+  display: flex;
+  gap: 20px;
+}
+.boton-urgente {
+  background-color: #ff0000; /* Color de fondo rojo */
+  color: #ffffff; /* Color del texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  display: inline-block; /* Para que se comporte como un botón */
+  font-family: Arial, sans-serif; /* Fuente */
+  font-size: 16px; /* Tamaño del texto */
+  position: relative; /* Para posicionar el botón de cerrar */
+}
+.cont-tag {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contador {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.box1 {
+  display: flex;
+  gap: 10px;
+}
+.cantidad {
+  font-weight: bold;
+}
+.deselect-all-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 3px;
+  border-radius: 4px;
+}
+.deselect-all-btn:hover {
+  background-color: #005bbd;
+}
